@@ -9,4 +9,4 @@ ON p.professors_course_id = c.idCourses
 Right JOIN grades g
 ON g.grades_students_id = s.idStudent
 GROUP BY s.idStudent
-ORDER BY g.Score DESC;
+ORDER BY MAX(g.Score);
